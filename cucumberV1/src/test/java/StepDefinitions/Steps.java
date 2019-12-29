@@ -3,10 +3,14 @@
  */
 package StepDefinitions;
 
+import java.util.List;
+import java.util.Map;
+import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import PageObjects.LoginPagePOM;
+import Utilities.ObjectUltilities;
+import cucumber.api.DataTable;
 import cucumber.api.java.en.*;
 
 /**
@@ -20,33 +24,58 @@ public class Steps extends BaseClass {
 		System.setProperty("webdriver.chrome.driver", "E://Java//cucumberV1//Drivers//chromedriver.exe");
 		driver = new ChromeDriver();
 		lp = new LoginPagePOM(driver);
+		ol=new ObjectUltilities(driver);
+		log = Logger.getLogger(Steps.class);
+		log.info("=========Launch a Browser=========");
 	}
 
 	@When("^User open nopcommerce url$")
 	public void user_open_nopcommerce_url() {
 		driver.get("https://admin-demo.nopcommerce.com/login");
+		ol.pageLoad(20);
+		log.info("=========Open nopcommerce application=========");
 	}
 
-	@When("^User enters register username and password$")
-	public void user_enters_register_username_and_password() {
-		lp.inputUserId("admin@yourstore.com");
-		lp.inputPassword("admin");
-	}
-	
 	@When("^User open URL \"([^\"]*)\"$")
 	public void user_open_URL(String url) {
 	   driver.get(url);
+	   log.info("=========Open nopcommerce application=========");   
+	}
+	
+	@And("^User enters register username and password$")
+	public void user_enters_register_username_and_password() {
+		lp.inputUserId("admin@yourstore.com");
+		lp.inputPassword("admin");
+		log.info("=========Provide Credentials=========");
 	}
 
-	@When("^User enters Email as \"([^\"]*)\" and Password as \"([^\"]*)\"$")
+	@And("^User enters Email as \"([^\"]*)\" and Password as \"([^\"]*)\"$")
 	public void user_enters_Email_as_and_Password_as(String userName, String password) {
 	    lp.inputUserId(userName);
 	    lp.inputPassword(password);
+	    log.info("=========Provide Credentials=========");
+	}
+	
+	@And("^User enters registerd username and password as a parameter$")
+	public void user_enters_registerd_username_and_password_as_a_parameter(DataTable credentials) {
+	 List<List<String>> list=credentials.raw();
+	 lp.inputUserId(list.get(0).get(0));
+	 lp.inputPassword(list.get(0).get(1));
+	 log.info("=========Provide Credentials=========");
+	}
+
+	@And("^User enters registerd username and password as a parameter for multiple parameter testing$")
+	public void user_enters_registerd_username_and_password_as_a_parameter_for_multiple_parameter_testing(DataTable credentials) {
+		List<Map<String,String>> list=credentials.asMaps(String.class, String.class);
+		lp.inputUserId(list.get(0).get("user"));
+		lp.inputPassword(list.get(0).get("password"));
+		log.info("=========Provide Credentials=========");
 	}
 
 	@When("^click on Login$")
 	public void click_on_Login() {
 		lp.submitBtn();
+		log.info("=========Logout Application=========");
 	}
 
 	@Then("^Page Title should be \"([^\"]*)\"$")
@@ -58,6 +87,7 @@ public class Steps extends BaseClass {
     else {
     	Assert.assertEquals(title, driver.getTitle());
     }
+    log.info("=========Verify Page Title=========");
 	}
 
 	@When("^User click on Logout link$")
@@ -68,6 +98,7 @@ public class Steps extends BaseClass {
 	@Then("^close browser$")
 	public void close_browser() {
      driver.quit();
+     log.info("=========Close a Browser=========");
 	}
 
 }

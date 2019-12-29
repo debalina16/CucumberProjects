@@ -17,17 +17,17 @@ formatter.match({
   "location": "Steps.user_Launch_Chrome_Browser()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "User open URL \"https://admin-demo.nopcommerce.com/login\"",
+  "name": "User open nopcommerce url",
   "keyword": "When "
 });
 formatter.match({
-  "location": "Steps.user_open_URL(String)"
+  "location": "Steps.user_open_nopcommerce_url()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "User enters register username and password",
@@ -37,7 +37,7 @@ formatter.match({
   "location": "Steps.user_enters_register_username_and_password()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "click on Login",
@@ -47,7 +47,7 @@ formatter.match({
   "location": "Steps.click_on_Login()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Page Title should be \"Dashboard / nopCommerce administration\"",
@@ -57,7 +57,7 @@ formatter.match({
   "location": "Steps.page_Title_should_be(String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "User click on Logout link",
@@ -67,7 +67,7 @@ formatter.match({
   "location": "Steps.user_click_on_Logout_link()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Page Title should be \"Your store. Login\"",
@@ -77,7 +77,7 @@ formatter.match({
   "location": "Steps.page_Title_should_be(String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "close browser",
@@ -87,7 +87,7 @@ formatter.match({
   "location": "Steps.close_browser()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
   "name": "Successfully Login with Valid Credentials with parameter",
@@ -102,7 +102,7 @@ formatter.match({
   "location": "Steps.user_Launch_Chrome_Browser()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "User open URL \"https://admin-demo.nopcommerce.com/login\"",
@@ -112,7 +112,7 @@ formatter.match({
   "location": "Steps.user_open_URL(String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "User enters Email as \"admin@yourstore.com\" and Password as \"admin\"",
@@ -122,7 +122,7 @@ formatter.match({
   "location": "Steps.user_enters_Email_as_and_Password_as(String,String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "click on Login",
@@ -132,7 +132,7 @@ formatter.match({
   "location": "Steps.click_on_Login()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Page Title should be \"Dashboard / nopCommerce administration\"",
@@ -142,7 +142,7 @@ formatter.match({
   "location": "Steps.page_Title_should_be(String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "User click on Logout link",
@@ -152,7 +152,7 @@ formatter.match({
   "location": "Steps.user_click_on_Logout_link()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Page Title should be \"Your store. Login\"",
@@ -162,7 +162,7 @@ formatter.match({
   "location": "Steps.page_Title_should_be(String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "close browser",
@@ -172,7 +172,7 @@ formatter.match({
   "location": "Steps.close_browser()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenarioOutline({
   "name": "Login Data Driven",
@@ -249,7 +249,7 @@ formatter.match({
   "location": "Steps.user_Launch_Chrome_Browser()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "User open URL \"https://admin-demo.nopcommerce.com/login\"",
@@ -259,7 +259,7 @@ formatter.match({
   "location": "Steps.user_open_URL(String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "User enters Email as \"admin@yourstore.com\" and Password as \"admin\"",
@@ -269,7 +269,7 @@ formatter.match({
   "location": "Steps.user_enters_Email_as_and_Password_as(String,String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "click on Login",
@@ -279,7 +279,7 @@ formatter.match({
   "location": "Steps.click_on_Login()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Page Title should be \"Dashboard / nopCommerce administration\"",
@@ -289,7 +289,7 @@ formatter.match({
   "location": "Steps.page_Title_should_be(String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "User click on Logout link",
@@ -299,7 +299,7 @@ formatter.match({
   "location": "Steps.user_click_on_Logout_link()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Page Title should be \"Your store. Login\"",
@@ -309,7 +309,7 @@ formatter.match({
   "location": "Steps.page_Title_should_be(String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "close browser",
@@ -319,7 +319,7 @@ formatter.match({
   "location": "Steps.close_browser()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
   "name": "Login Data Driven",
@@ -334,7 +334,7 @@ formatter.match({
   "location": "Steps.user_Launch_Chrome_Browser()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "User open URL \"https://admin-demo.nopcommerce.com/login\"",
@@ -344,7 +344,7 @@ formatter.match({
   "location": "Steps.user_open_URL(String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "User enters Email as \"admin@yourstore.com\" and Password as \"admin123\"",
@@ -354,7 +354,7 @@ formatter.match({
   "location": "Steps.user_enters_Email_as_and_Password_as(String,String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "click on Login",
@@ -364,7 +364,7 @@ formatter.match({
   "location": "Steps.click_on_Login()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Page Title should be \"Dashboard / nopCommerce administration\"",
@@ -374,8 +374,7 @@ formatter.match({
   "location": "Steps.page_Title_should_be(String)"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat stepDefinitions.Steps.page_Title_should_be(Steps.java:73)\r\n\tat ✽.Page Title should be \"Dashboard / nopCommerce administration\"(./Features/Login.feature:28)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "User click on Logout link",
@@ -420,7 +419,7 @@ formatter.match({
   "location": "Steps.user_Launch_Chrome_Browser()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "User open URL \"https://admin-demo.nopcommerce.com/login\"",
@@ -430,7 +429,7 @@ formatter.match({
   "location": "Steps.user_open_URL(String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "User enters registerd username and password as a parameter",
@@ -448,7 +447,7 @@ formatter.match({
   "location": "Steps.user_enters_registerd_username_and_password_as_a_parameter(DataTable)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "click on Login",
@@ -458,7 +457,7 @@ formatter.match({
   "location": "Steps.click_on_Login()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Page Title should be \"Dashboard / nopCommerce administration\"",
@@ -468,7 +467,7 @@ formatter.match({
   "location": "Steps.page_Title_should_be(String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "User click on Logout link",
@@ -478,7 +477,7 @@ formatter.match({
   "location": "Steps.user_click_on_Logout_link()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Page Title should be \"Your store. Login\"",
@@ -488,7 +487,7 @@ formatter.match({
   "location": "Steps.page_Title_should_be(String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "close browser",
@@ -498,7 +497,7 @@ formatter.match({
   "location": "Steps.close_browser()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
   "name": "Successfully Login with Valid Credentials with Datatable single parameter",
@@ -513,7 +512,7 @@ formatter.match({
   "location": "Steps.user_Launch_Chrome_Browser()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "User open URL \"https://admin-demo.nopcommerce.com/login\"",
@@ -523,7 +522,7 @@ formatter.match({
   "location": "Steps.user_open_URL(String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "User enters registerd username and password as a parameter for multiple parameter testing",
@@ -547,7 +546,7 @@ formatter.match({
   "location": "Steps.user_enters_registerd_username_and_password_as_a_parameter_for_multiple_parameter_testing(DataTable)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "click on Login",
@@ -557,7 +556,7 @@ formatter.match({
   "location": "Steps.click_on_Login()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Page Title should be \"Dashboard / nopCommerce administration\"",
@@ -567,7 +566,7 @@ formatter.match({
   "location": "Steps.page_Title_should_be(String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "User click on Logout link",
@@ -577,7 +576,7 @@ formatter.match({
   "location": "Steps.user_click_on_Logout_link()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Page Title should be \"Your store. Login\"",
@@ -587,7 +586,7 @@ formatter.match({
   "location": "Steps.page_Title_should_be(String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "close browser",
@@ -597,6 +596,6 @@ formatter.match({
   "location": "Steps.close_browser()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 });
