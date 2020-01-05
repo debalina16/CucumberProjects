@@ -1,0 +1,14 @@
+2020-01-05 17:12:32,423  INFO [main] Steps:52 - =========Launch a Browser=========
+2020-01-05 17:12:35,249  INFO [main] Steps:65 - =========Open nopcommerce application=========
+2020-01-05 17:12:35,459  INFO [main] Steps:96 - =========Provide Credentials=========
+2020-01-05 17:12:42,910  INFO [main] Steps:110 - =========Logout Application=========
+2020-01-05 17:12:43,017  INFO [main] Steps:121 - =========Verify Page Title=========
+2020-01-05 17:12:47,148  INFO [main] Steps:121 - =========Verify Page Title=========
+2020-01-05 17:12:48,059  INFO [main] Steps:133 - =========Close a Browser=========
+2020-01-05 17:12:50,205  INFO [main] Steps:52 - =========Launch a Browser=========
+2020-01-05 17:12:52,797  INFO [main] Steps:65 - =========Open nopcommerce application=========
+2020-01-05 17:12:52,988  INFO [main] Steps:87 - =========Provide Credentials=========
+2020-01-05 17:12:58,146  INFO [main] Steps:110 - =========Logout Application=========
+2020-01-05 17:12:58,198  INFO [main] Steps:121 - =========Verify Page Title=========
+2020-01-05 17:13:01,604  INFO [main] Steps:121 - =========Verify Page Title=========
+2020-01-05 17:13:02,382  INFO [main] Steps:133 - =========Close a Browser=========
